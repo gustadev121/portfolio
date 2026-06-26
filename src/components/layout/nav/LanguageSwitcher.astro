@@ -1,10 +1,9 @@
 ---
-import NavItem from './NavItem.astro';
 import LanguageIcon from '@/assets/icons/language.svg';
+import { languages, ui } from '@/i18n/ui';
+import NavItem from './NavItem.astro';
 import NavMenuContainer from './NavMenuContainer.astro';
 import NavMenuItem from './NavMenuItem.astro';
-import { ui } from '@/i18n/ui';
-import { languages } from '@/i18n/ui';
 ---
 
 <NavItem id={ui.label} as="button" class="overflow-visible relative">

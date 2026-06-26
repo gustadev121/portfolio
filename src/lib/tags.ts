@@ -1,9 +1,9 @@
-import TailwindLogo from '@/assets/icons/tailwindcss.svg';
+import MotionLogo from '@/assets/icons/motion.svg';
 import NextJSLogo from '@/assets/icons/nextjs.svg';
 import ReactLogo from '@/assets/icons/react.svg';
-import MotionLogo from '@/assets/icons/motion.svg';
-import UnityLogo from '@/assets/icons/unity.svg';
 import SupabaseLogo from '@/assets/icons/supabase.svg';
+import TailwindLogo from '@/assets/icons/tailwindcss.svg';
+import UnityLogo from '@/assets/icons/unity.svg';
 import VercelLogo from '@/assets/icons/vercel.svg';
 import type { getI18n } from '@/i18n/index';
 

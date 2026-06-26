@@ -1,5 +1,5 @@
-import { Locale } from '@/i18n/index';
 import { SITE_URL } from 'astro:env/client';
+import { Locale } from '@/i18n/index';
 
 export const RootSections = {
   [Locale.ES]: {

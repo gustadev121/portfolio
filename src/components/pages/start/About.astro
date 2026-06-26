@@ -1,11 +1,11 @@
 ---
+import { Image } from 'astro:assets';
+import PersonIcon from '@/assets/icons/person.svg';
+import AboutImage from '@/assets/images/about.webp';
 import Section from '@/components/ui/Section.astro';
 import Title from '@/components/ui/Title.astro';
-import PersonIcon from '@/assets/icons/person.svg';
 import { RootSections } from '@/config/pages';
-import AboutImage from '@/assets/images/about.webp';
 import { DEFAULT_LOCALE, getI18n, type Locale } from '@/i18n/index';
-import { Image } from 'astro:assets';
 
 const currentLocale = (Astro.currentLocale as Locale) ?? DEFAULT_LOCALE;
 const i18n = getI18n({ currentLocale: currentLocale });

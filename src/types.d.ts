@@ -1,4 +1,4 @@
-import CodeIcon from "@assets/icons/code.svg";
+import CodeIcon from '@assets/icons/code.svg';
 
 export interface TagType {
   icon?: typeof CodeIcon;

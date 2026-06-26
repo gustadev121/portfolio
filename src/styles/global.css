@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -19,13 +19,13 @@
 
 .dark {
   --primary: #020f58;
-  --primary-foreground: #FFD62C;
+  --primary-foreground: #ffd62c;
   --secondary: #04428e;
   --secondary-foreground: #ffffff;
-  --tertiary: #395DFF;
-  --accent: #EA780E;
+  --tertiary: #395dff;
+  --accent: #ea780e;
   --muted: #ffd69c;
-  --button: #02183A;
+  --button: #02183a;
   --button-foreground: #0088ff;
   --navbar: var(--button);
   --navbar-foreground: var(--button-foreground);
@@ -59,7 +59,7 @@
 
     to {
       opacity: 1;
-      scale: 1
+      scale: 1;
     }
   }
 }

@@ -1,15 +1,19 @@
 // @ts-check
-import { defineConfig, envField } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
+import { defineConfig, envField } from 'astro/config';
 import { ALL_LOCALES, DEFAULT_LOCALE } from './src/i18n/index';
 
 // https://astro.build/config
 export default defineConfig({
   env: {
     schema: {
-      SITE_URL: envField.string({ context: 'client', access: 'public', default: 'http://localhost:4321' })
-    }
+      SITE_URL: envField.string({
+        context: 'client',
+        access: 'public',
+        default: 'http://localhost:4321',
+      }),
+    },
   },
   vite: {
     plugins: [tailwindcss()],

@@ -1,5 +1,5 @@
-import { DEFAULT_LOCALE, type Locale } from '@/i18n';
 import pagesConfig, { type HashRootRoutes } from '@/config/pages';
+import { DEFAULT_LOCALE, type Locale } from '@/i18n';
 
 export function getLangFromPathname(url: string): Locale {
   const [, lang] = url.split('/');
@@ -10,9 +10,7 @@ export function getLangFromPathname(url: string): Locale {
 export function getHashKey(hash: string, lang: Locale) {
   // #sobre-mí lang: es
 
-  const entry = Object.entries(pagesConfig.pages[lang].sections).find(
-    ([, { id }]) => id === hash,
-  );
+  const entry = Object.entries(pagesConfig.pages[lang].sections).find(([, { id }]) => id === hash);
 
   if (entry) {
     return entry[0] as HashRootRoutes;

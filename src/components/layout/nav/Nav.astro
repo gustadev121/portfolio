@@ -1,12 +1,11 @@
 ---
-import NavItem from './NavItem.astro';
 import CodeIcon from '@/assets/icons/code.svg';
-import StackIcon from '@/assets/icons/stack.svg';
 import PersonIcon from '@/assets/icons/person.svg';
-import pagesConfig from '@/config/pages';
-import { RootSections } from '@/config/pages';
-import { DEFAULT_LOCALE, getI18n, Locale } from '@/i18n/index';
+import StackIcon from '@/assets/icons/stack.svg';
+import pagesConfig, { RootSections } from '@/config/pages';
+import { DEFAULT_LOCALE, getI18n, type Locale } from '@/i18n/index';
 import { useTranslatedPath } from '@/i18n/utils';
+import NavItem from './NavItem.astro';
 
 const { currentLocale = DEFAULT_LOCALE } = Astro;
 const locale = currentLocale as Locale;
@@ -18,7 +17,7 @@ const translatePath = useTranslatedPath(locale);
 
 const navItems = translatedIdSections.map(({ id }) => {
   let iconSection: { component: typeof CodeIcon; class: string };
-  let name;
+  let name: string;
   switch (id) {
     case RootSections[locale].ABOUT_ME:
       iconSection = {

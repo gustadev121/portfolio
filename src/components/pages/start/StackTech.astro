@@ -1,19 +1,19 @@
 ---
-import Section from '@/components/ui/Section.astro';
-import type { TechType } from '@/types';
-import Title from '@/components/ui/Title.astro';
-import StackIcon from '@/assets/icons/stack.svg';
-import TailwindLogo from '@/assets/icons/tailwindcss.svg';
+import AstroLogo from '@/assets/icons/astro.svg';
+import MotionLogo from '@/assets/icons/motion.svg';
 import NextJSLogo from '@/assets/icons/nextjs.svg';
 import ReactLogo from '@/assets/icons/react.svg';
-import MotionLogo from '@/assets/icons/motion.svg';
-import UnityLogo from '@/assets/icons/unity.svg';
+import StackIcon from '@/assets/icons/stack.svg';
 import SupabaseLogo from '@/assets/icons/supabase.svg';
+import TailwindLogo from '@/assets/icons/tailwindcss.svg';
+import UnityLogo from '@/assets/icons/unity.svg';
 import VercelLogo from '@/assets/icons/vercel.svg';
-import AstroLogo from '@/assets/icons/astro.svg';
+import Section from '@/components/ui/Section.astro';
+import Title from '@/components/ui/Title.astro';
 import { RootSections } from '@/config/pages';
+import { DEFAULT_LOCALE, getI18n, type Locale } from '@/i18n/index';
+import type { TechType } from '@/types';
 import TechItem from './TechItem.astro';
-import { DEFAULT_LOCALE, getI18n, Locale } from '@/i18n/index';
 
 const { currentLocale = DEFAULT_LOCALE } = Astro;
 const i18n = getI18n({ currentLocale: currentLocale as Locale });
