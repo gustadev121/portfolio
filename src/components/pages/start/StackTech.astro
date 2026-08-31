@@ -23,42 +23,50 @@ const i18n = getI18n({ currentLocale: currentLocale as Locale });
 const techs: TechType[] = [
   {
     content: 'Tailwind CSS',
-    class: 'bg-[#003159]',
+    class:
+      'bg-white/80 dark:bg-slate-800/50 text-slate-700 dark:text-slate-200 border border-slate-200/80 dark:border-white/10 hover:border-sky-400 hover:text-sky-500 hover:shadow-md transition-all duration-200',
     icon: IconBrandTailwind,
   },
   {
     content: 'Next JS',
-    class: 'bg-black',
+    class:
+      'bg-white/80 dark:bg-slate-800/50 text-slate-700 dark:text-slate-200 border border-slate-200/80 dark:border-white/10 hover:border-slate-500 hover:text-black dark:hover:text-white hover:shadow-md transition-all duration-200',
     icon: IconBrandNextjs,
   },
   {
     content: 'React',
-    class: 'bg-[#23272F]',
+    class:
+      'bg-white/80 dark:bg-slate-800/50 text-slate-700 dark:text-slate-200 border border-slate-200/80 dark:border-white/10 hover:border-cyan-400 hover:text-cyan-500 hover:shadow-md transition-all duration-200',
     icon: IconBrandReact,
   },
   {
     content: 'Motion',
-    class: 'bg-[#1A202C]',
+    class:
+      'bg-white/80 dark:bg-slate-800/50 text-slate-700 dark:text-slate-200 border border-slate-200/80 dark:border-white/10 hover:border-purple-400 hover:text-purple-500 hover:shadow-md transition-all duration-200',
     icon: IconBrandFramerMotion,
   },
   {
     content: 'Unity',
-    class: 'bg-black',
+    class:
+      'bg-white/80 dark:bg-slate-800/50 text-slate-700 dark:text-slate-200 border border-slate-200/80 dark:border-white/10 hover:border-indigo-400 hover:text-indigo-500 hover:shadow-md transition-all duration-200',
     icon: IconBrandUnity,
   },
   {
     content: 'Supabase',
-    class: 'bg-[#1A202C]',
+    class:
+      'bg-white/80 dark:bg-slate-800/50 text-slate-700 dark:text-slate-200 border border-slate-200/80 dark:border-white/10 hover:border-emerald-400 hover:text-emerald-500 hover:shadow-md transition-all duration-200',
     icon: IconBrandSupabase,
   },
   {
     content: 'Vercel',
-    class: 'bg-black',
+    class:
+      'bg-white/80 dark:bg-slate-800/50 text-slate-700 dark:text-slate-200 border border-slate-200/80 dark:border-white/10 hover:border-slate-500 hover:text-black dark:hover:text-white hover:shadow-md transition-all duration-200',
     icon: IconBrandVercel,
   },
   {
     content: 'Astro',
-    class: 'bg-black',
+    class:
+      'bg-white/80 dark:bg-slate-800/50 text-slate-700 dark:text-slate-200 border border-slate-200/80 dark:border-white/10 hover:border-orange-400 hover:text-orange-500 hover:shadow-md transition-all duration-200',
     icon: IconBrandAstro,
   },
 ];
@@ -66,7 +74,7 @@ const techs: TechType[] = [
 
 <Section class="flex-col" id={RootSections[currentLocale as Locale].STACK_TECH}>
   <Title>
-    <IconStack2 class="size-10 stroke-primary-foreground" />
+    <IconStack2 class="size-8 md:size-9 stroke-sky-600 dark:stroke-sky-400" />
     {i18n.STACK_TECH.TITLE}
   </Title>
   <div class="flex flex-wrap gap-x-8 gap-y-16 justify-center">

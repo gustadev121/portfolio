@@ -11,21 +11,30 @@ const i18n = getI18n({ currentLocale: currentLocale as Locale });
 
 <Section class="flex-col justify-between gap-10 items-center md:hidden">
   <div class="flex flex-col gap-3 items-center">
+    <div
+      class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/20 w-fit backdrop-blur-xs shadow-xs"
+    >
+      <span class="size-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+      <span>{i18n.HERO.SUBTITLE}</span>
+    </div>
     <h1
-      class="text-primary-foreground text-5xl sm:text-6xl font-primary font-medium text-center tracking-tight"
+      class="text-5xl sm:text-6xl font-primary font-medium text-center tracking-tight text-slate-900 dark:text-white"
     >
       Gustavo Sequeiros
     </h1>
-    <h3 class="text-tertiary text-3xl sm:text-4xl font-primary text-center">
-      {i18n.HERO.SUBTITLE}
-    </h3>
   </div>
   <div class="flex flex-col gap-5 items-center">
-    <Image
-      src={heroImage}
-      alt="Gustavo Sequeiros"
-      class="rounded-full aspect-square max-w-64 sm:max-w-72 shadow-container border-2 border-primary/20"
-    />
+    <div class="relative group">
+      <div
+        class="p-1 rounded-full bg-slate-100 dark:bg-slate-800/80 ring-1 ring-slate-200 dark:ring-white/10 shadow-lg shadow-slate-900/5"
+      >
+        <Image
+          src={heroImage}
+          alt="Gustavo Sequeiros"
+          class="rounded-full aspect-square max-w-64 sm:max-w-72 bg-white dark:bg-slate-900"
+        />
+      </div>
+    </div>
     <SocialButtons />
   </div>
   <article
