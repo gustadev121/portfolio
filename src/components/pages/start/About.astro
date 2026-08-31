@@ -16,15 +16,20 @@ const i18n = getI18n({ currentLocale: currentLocale });
     <IconUser class="size-10 stroke-primary-foreground" />
     {i18n.ABOUT.TITLE}
   </Title>
-  <div class="flex flex-col md:flex-row gap-4">
-    <div class="flex items-center flex-1 rounded-xl p-5">
-      <p class="text-lg md:text-2xl" set:html={i18n.ABOUT.DESCRIPTION} />
+  <div
+    class="flex flex-col md:flex-row gap-8 lg:gap-12 items-center bg-secondary/15 dark:bg-secondary/10 p-6 md:p-10 rounded-2xl border border-secondary/25 dark:border-white/10 shadow-container shadow-secondary/40 backdrop-blur-xs"
+  >
+    <div class="flex-1 text-secondary-foreground">
+      <p
+        class="text-lg md:text-xl leading-relaxed text-pretty"
+        set:html={i18n.ABOUT.DESCRIPTION}
+      />
     </div>
-    <div class="flex-1">
+    <div class="w-full max-w-xs md:max-w-sm shrink-0">
       <Image
         src={AboutImage}
         alt="Gustavo Sequeiros profile"
-        class="rounded-xl shadow-container object-cover max-h-[450px]"
+        class="w-full rounded-2xl shadow-lg border border-secondary/20 object-cover aspect-[4/5]"
       />
     </div>
   </div>

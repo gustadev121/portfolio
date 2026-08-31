@@ -26,9 +26,9 @@ const socialMedia = [
 
 <menu class="flex gap-4 justify-center">
   {
-    socialMedia.map(({ link, icon: Icon, class: className }) => (
+    socialMedia.map(({ link, social, icon: Icon, class: className }) => (
       <li>
-        <Button as="a" href={link}>
+        <Button as="a" href={link} aria-label={social}>
           <Icon slot="icon" size={20} class={className} />
         </Button>
       </li>
