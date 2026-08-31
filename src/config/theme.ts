@@ -1,18 +1,16 @@
-import DesktopIcon from '@/assets/icons/desktop.svg';
-import MoonIcon from '@/assets/icons/moon.svg';
-import SunIcon from '@/assets/icons/sun.svg';
+import { IconDeviceDesktop, IconMoon, IconSun } from '@tabler/icons-astro';
 
 export const themes = {
   dark: {
     value: 'dark',
-    icon: MoonIcon,
+    icon: IconMoon,
   },
   light: {
     value: 'light',
-    icon: SunIcon,
+    icon: IconSun,
   },
   system: {
-    icon: DesktopIcon,
+    icon: IconDeviceDesktop,
     value: 'system',
   },
 };

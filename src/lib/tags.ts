@@ -1,47 +1,49 @@
-import MotionLogo from '@/assets/icons/motion.svg';
-import NextJSLogo from '@/assets/icons/nextjs.svg';
-import ReactLogo from '@/assets/icons/react.svg';
-import SupabaseLogo from '@/assets/icons/supabase.svg';
-import TailwindLogo from '@/assets/icons/tailwindcss.svg';
-import UnityLogo from '@/assets/icons/unity.svg';
-import VercelLogo from '@/assets/icons/vercel.svg';
+import {
+  IconBrandFramerMotion,
+  IconBrandNextjs,
+  IconBrandReact,
+  IconBrandSupabase,
+  IconBrandTailwind,
+  IconBrandUnity,
+  IconBrandVercel,
+} from '@tabler/icons-astro';
 import type { getI18n } from '@/i18n/index';
 
 export const genTags = (i18n: ReturnType<typeof getI18n>) => ({
   tailwind: {
     content: 'Tailwind CSS',
     class: 'bg-[#003159]',
-    icon: TailwindLogo,
+    icon: IconBrandTailwind,
   },
   nextjs: {
     content: 'Next JS',
     class: 'bg-black',
-    icon: NextJSLogo,
+    icon: IconBrandNextjs,
   },
   react: {
     content: 'React',
     class: 'bg-[#23272F]',
-    icon: ReactLogo,
+    icon: IconBrandReact,
   },
   motion: {
     content: 'Motion',
     class: 'bg-[#1A202C]',
-    icon: MotionLogo,
+    icon: IconBrandFramerMotion,
   },
   unity: {
     content: 'Unity',
     class: 'bg-black',
-    icon: UnityLogo,
+    icon: IconBrandUnity,
   },
   supabase: {
     content: 'Supabase',
     class: 'bg-[#1A202C]',
-    icon: SupabaseLogo,
+    icon: IconBrandSupabase,
   },
   vercel: {
     content: 'Vercel',
     class: 'bg-black',
-    icon: VercelLogo,
+    icon: IconBrandVercel,
   },
   frontend: {
     content: i18n.PROJECTS.CARD.TAGS.FRONTEND,

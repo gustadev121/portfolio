@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import PersonIcon from '@/assets/icons/person.svg';
+import { IconUser } from '@tabler/icons-astro';
 import AboutImage from '@/assets/images/about.webp';
 import Section from '@/components/ui/Section.astro';
 import Title from '@/components/ui/Title.astro';
@@ -13,7 +13,7 @@ const i18n = getI18n({ currentLocale: currentLocale });
 
 <Section class="flex-col" id={RootSections[currentLocale].ABOUT_ME}>
   <Title>
-    <PersonIcon class="size-10 stroke-primary-foreground" />
+    <IconUser class="size-10 stroke-primary-foreground" />
     {i18n.ABOUT.TITLE}
   </Title>
   <div class="flex flex-col md:flex-row gap-4">

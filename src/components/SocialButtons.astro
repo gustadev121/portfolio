@@ -1,26 +1,24 @@
 ---
-import GithubIcon from '@/assets/icons/github.svg';
-import LinkedinIcon from '@/assets/icons/linkedin.svg';
-import MailIcon from '@/assets/icons/mail.svg';
+import { IconBrandGithub, IconBrandLinkedin, IconMail } from '@tabler/icons-astro';
 import Button from '@/components/ui/Button.astro';
 
 const socialMedia = [
   {
     social: 'github',
     link: 'https://github.com/gustadev24',
-    icon: GithubIcon,
-    class: 'fill-button-foreground group-hover:fill-accent',
+    icon: IconBrandGithub,
+    class: 'stroke-button-foreground group-hover:stroke-accent',
   },
   {
     social: 'linkedin',
     link: 'https://linkedin.com/in/luisgustavoseq/',
-    icon: LinkedinIcon,
-    class: 'fill-button-foreground group-hover:fill-accent',
+    icon: IconBrandLinkedin,
+    class: 'stroke-button-foreground group-hover:stroke-accent',
   },
   {
     social: 'email',
     link: 'mailto:lgsc21211@gmail.com',
-    icon: MailIcon,
+    icon: IconMail,
     class: 'stroke-button-foreground group-hover:stroke-accent',
   },
 ];
@@ -31,7 +29,7 @@ const socialMedia = [
     socialMedia.map(({ link, icon: Icon, class: className }) => (
       <li>
         <Button as="a" href={link}>
-          <Icon slot="icon" width={20} height={20} class={className} />
+          <Icon slot="icon" size={20} class={className} />
         </Button>
       </li>
     ))

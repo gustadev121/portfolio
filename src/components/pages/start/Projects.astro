@@ -1,5 +1,5 @@
 ---
-import CodeIcon from '@/assets/icons/code.svg';
+import { IconCode } from '@tabler/icons-astro';
 import Section from '@/components/ui/Section.astro';
 import Title from '@/components/ui/Title.astro';
 import { RootSections } from '@/config/pages';
@@ -14,7 +14,7 @@ const projects = genProjects(i18n);
 
 <Section id={RootSections[currentLocale as Locale].PROJECTS} class="flex-col">
   <Title>
-    <CodeIcon class="size-10 stroke-primary-foreground" />
+    <IconCode class="size-10 stroke-primary-foreground" />
     {i18n.PROJECTS.TITLE}
   </Title>
   <div

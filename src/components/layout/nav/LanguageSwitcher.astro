@@ -1,5 +1,5 @@
 ---
-import LanguageIcon from '@/assets/icons/language.svg';
+import { IconLanguage } from '@tabler/icons-astro';
 import { languages, ui } from '@/i18n/ui';
 import NavItem from './NavItem.astro';
 import NavMenuContainer from './NavMenuContainer.astro';
@@ -8,9 +8,7 @@ import NavMenuItem from './NavMenuItem.astro';
 
 <NavItem id={ui.label} as="button" class="overflow-visible relative">
   <div class="size-5 overflow-hidden" transition:persist>
-    <LanguageIcon
-      class="size-5 stroke-transparent fill-navbar-foreground group-hover:fill-accent"
-    />
+    <IconLanguage class="size-5" />
   </div>
   <NavMenuContainer id={`${ui.label}-menu`}>
     {

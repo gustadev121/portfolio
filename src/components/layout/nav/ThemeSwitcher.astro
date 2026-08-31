@@ -1,7 +1,5 @@
 ---
-import DesktopIcon from '@/assets/icons/desktop.svg';
-import MoonIcon from '@/assets/icons/moon.svg';
-import SunIcon from '@/assets/icons/sun.svg';
+import { IconDeviceDesktop, IconMoon, IconSun } from '@tabler/icons-astro';
 import { themes, themeUIConfig } from '@/config/theme';
 import { getI18n, type Locale } from '@/i18n/index';
 import NavItem from './NavItem.astro';
@@ -14,9 +12,9 @@ const i18n = getI18n({ currentLocale: currentLocale as Locale });
 
 <NavItem id={themeUIConfig.label} as="button" class="overflow-visible relative">
   <div class="size-5 overflow-hidden">
-    <DesktopIcon id={themes.system.value} class="size-5 theme-icon" />
-    <MoonIcon id={themes.dark.value} class="size-5 theme-icon" />
-    <SunIcon id={themes.light.value} class="size-5 theme-icon" />
+    <IconDeviceDesktop id={themes.system.value} class="size-5 theme-icon" />
+    <IconMoon id={themes.dark.value} class="size-5 theme-icon" />
+    <IconSun id={themes.light.value} class="size-5 theme-icon" />
   </div>
   <NavMenuContainer id={`${themeUIConfig.label}-menu`}>
     {

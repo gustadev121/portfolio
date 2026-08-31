@@ -1,13 +1,15 @@
 ---
-import AstroLogo from '@/assets/icons/astro.svg';
-import MotionLogo from '@/assets/icons/motion.svg';
-import NextJSLogo from '@/assets/icons/nextjs.svg';
-import ReactLogo from '@/assets/icons/react.svg';
-import StackIcon from '@/assets/icons/stack.svg';
-import SupabaseLogo from '@/assets/icons/supabase.svg';
-import TailwindLogo from '@/assets/icons/tailwindcss.svg';
-import UnityLogo from '@/assets/icons/unity.svg';
-import VercelLogo from '@/assets/icons/vercel.svg';
+import {
+  IconBrandAstro,
+  IconBrandFramerMotion,
+  IconBrandNextjs,
+  IconBrandReact,
+  IconBrandSupabase,
+  IconBrandTailwind,
+  IconBrandUnity,
+  IconBrandVercel,
+  IconStack2,
+} from '@tabler/icons-astro';
 import Section from '@/components/ui/Section.astro';
 import Title from '@/components/ui/Title.astro';
 import { RootSections } from '@/config/pages';
@@ -22,49 +24,49 @@ const techs: TechType[] = [
   {
     content: 'Tailwind CSS',
     class: 'bg-[#003159]',
-    icon: TailwindLogo,
+    icon: IconBrandTailwind,
   },
   {
     content: 'Next JS',
     class: 'bg-black',
-    icon: NextJSLogo,
+    icon: IconBrandNextjs,
   },
   {
     content: 'React',
     class: 'bg-[#23272F]',
-    icon: ReactLogo,
+    icon: IconBrandReact,
   },
   {
     content: 'Motion',
     class: 'bg-[#1A202C]',
-    icon: MotionLogo,
+    icon: IconBrandFramerMotion,
   },
   {
     content: 'Unity',
     class: 'bg-black',
-    icon: UnityLogo,
+    icon: IconBrandUnity,
   },
   {
     content: 'Supabase',
     class: 'bg-[#1A202C]',
-    icon: SupabaseLogo,
+    icon: IconBrandSupabase,
   },
   {
     content: 'Vercel',
     class: 'bg-black',
-    icon: VercelLogo,
+    icon: IconBrandVercel,
   },
   {
     content: 'Astro',
     class: 'bg-black',
-    icon: AstroLogo,
+    icon: IconBrandAstro,
   },
 ];
 ---
 
 <Section class="flex-col" id={RootSections[currentLocale as Locale].STACK_TECH}>
   <Title>
-    <StackIcon class="size-10 stroke-primary-foreground" />
+    <IconStack2 class="size-10 stroke-primary-foreground" />
     {i18n.STACK_TECH.TITLE}
   </Title>
   <div class="flex flex-wrap gap-x-8 gap-y-16 justify-center">

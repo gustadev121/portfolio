@@ -1,7 +1,5 @@
 ---
-import CodeIcon from '@/assets/icons/code.svg';
-import PersonIcon from '@/assets/icons/person.svg';
-import StackIcon from '@/assets/icons/stack.svg';
+import { IconCode, IconStack2, IconUser } from '@tabler/icons-astro';
 import pagesConfig, { RootSections } from '@/config/pages';
 import { DEFAULT_LOCALE, getI18n, type Locale } from '@/i18n/index';
 import { useTranslatedPath } from '@/i18n/utils';
@@ -16,26 +14,26 @@ const translatedIdSections = Object.values(pagesConfig.pages[locale].sections);
 const translatePath = useTranslatedPath(locale);
 
 const navItems = translatedIdSections.map(({ id }) => {
-  let iconSection: { component: typeof CodeIcon; class: string };
+  let iconSection: { component: typeof IconCode; class: string };
   let name: string;
   switch (id) {
     case RootSections[locale].ABOUT_ME:
       iconSection = {
-        component: PersonIcon,
+        component: IconUser,
         class: 'size-5 group-hover:stroke-accent',
       };
       name = i18n.NAVBAR.ABOUT;
       break;
     case RootSections[locale].STACK_TECH:
       iconSection = {
-        component: StackIcon,
+        component: IconStack2,
         class: 'size-5 group-hover:stroke-accent',
       };
       name = i18n.NAVBAR.STACK_TECH;
       break;
     default:
       iconSection = {
-        component: CodeIcon,
+        component: IconCode,
         class: 'size-5 group-hover:stroke-accent',
       };
       name = i18n.NAVBAR.PROJECTS;

@@ -1,7 +1,7 @@
-import CodeIcon from '@assets/icons/code.svg';
+import type { AstroComponent } from '@tabler/icons-astro';
 
 export interface TagType {
-  icon?: typeof CodeIcon;
+  icon?: AstroComponent;
   content: string;
   class?: string;
   iconClass?: string;
@@ -17,7 +17,7 @@ export interface ProjectCardType {
 }
 
 export interface TechType {
-  icon: typeof CodeIcon;
+  icon: AstroComponent;
   content: string;
   class?: string;
   iconClass?: string;
