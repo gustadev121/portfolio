@@ -4,31 +4,31 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --primary: #0380d4;
-  --primary-foreground: #e46707;
-  --secondary: #205695;
-  --secondary-foreground: #0d2b72;
-  --tertiary: #0363d0;
-  --accent: #0a6fe3;
-  --muted: #7b7b7c;
-  --button: #c9d2f7;
-  --button-foreground: #02286e;
-  --navbar: var(--button);
-  --navbar-foreground: var(--button-foreground);
+  --primary: #0284c7;
+  --primary-foreground: #0f172a;
+  --secondary: #64748b;
+  --secondary-foreground: #334155;
+  --tertiary: #0369a1;
+  --accent: #2563eb;
+  --muted: #64748b;
+  --button: #ffffff;
+  --button-foreground: #0f172a;
+  --navbar: rgba(255, 255, 255, 0.88);
+  --navbar-foreground: #0f172a;
 }
 
 .dark {
-  --primary: #020f58;
-  --primary-foreground: #ffd62c;
-  --secondary: #04428e;
-  --secondary-foreground: #ffffff;
-  --tertiary: #395dff;
-  --accent: #ea780e;
-  --muted: #ffd69c;
-  --button: #02183a;
-  --button-foreground: #0088ff;
-  --navbar: var(--button);
-  --navbar-foreground: var(--button-foreground);
+  --primary: #38bdf8;
+  --primary-foreground: #f8fafc;
+  --secondary: #1e293b;
+  --secondary-foreground: #94a3b8;
+  --tertiary: #38bdf8;
+  --accent: #f59e0b;
+  --muted: #64748b;
+  --button: #0f172a;
+  --button-foreground: #f8fafc;
+  --navbar: rgba(15, 23, 42, 0.85);
+  --navbar-foreground: #f8fafc;
 }
 
 @theme {
