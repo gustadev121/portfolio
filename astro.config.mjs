@@ -6,12 +6,13 @@ import { ALL_LOCALES, DEFAULT_LOCALE } from './src/i18n/index';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://gustadev.app',
   env: {
     schema: {
       SITE_URL: envField.string({
         context: 'client',
         access: 'public',
-        default: 'http://localhost:4321',
+        default: 'https://gustadev.app',
       }),
     },
   },
