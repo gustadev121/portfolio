@@ -22,7 +22,7 @@ const heroId = 'hero-section';
       <h3 class="text-tertiary text-4xl font-primary">{i18n.HERO.SUBTITLE}</h3>
     </div>
     <article
-      class="bg-secondary/15 dark:bg-secondary/10 text-secondary-foreground p-5 text-xl text-pretty shadow-container shadow-secondary/40 rounded-2xl max-w-xl border border-secondary/20 leading-relaxed"
+      class="relative overflow-hidden before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-white/35 dark:before:via-white/20 before:to-transparent bg-secondary/15 dark:bg-secondary/10 text-secondary-foreground p-5 text-xl text-pretty shadow-container shadow-secondary/40 rounded-2xl max-w-xl border border-secondary/20 leading-relaxed backdrop-blur-xs"
       set:html={i18n.HERO.DESCRIPTION}
     />
   </div>
