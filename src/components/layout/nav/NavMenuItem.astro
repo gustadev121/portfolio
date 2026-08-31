@@ -9,7 +9,7 @@ const { class: className, ...rest } = Astro.props;
 
 <li
   class={cn(
-    'flex gap-2 text-navbar-foreground stroke-navbar-foreground items-center hover:text-accent hover:stroke-accent hover:bg-radial hover:from-accent/15 hover:to-transparent hover:to-70% transition-colors hover:cursor-pointer group',
+    'flex gap-2 text-navbar-foreground stroke-navbar-foreground items-center px-3 py-1.5 rounded-lg hover:text-accent hover:stroke-accent hover:bg-accent/15 active:scale-[0.97] transition-all duration-150 ease-out hover:cursor-pointer group select-none text-sm',
     className,
   )}
   {...rest}

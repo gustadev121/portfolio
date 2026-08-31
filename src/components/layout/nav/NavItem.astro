@@ -11,7 +11,7 @@ const { as: Tag, class: className, ...rest } = Astro.props;
 
 <Tag
   class={cn(
-    'flex gap-2 text-navbar-foreground stroke-navbar-foreground items-center hover:text-accent hover:stroke-accent hover:bg-radial hover:from-accent/20 hover:to-transparent hover:to-80% transition-colors hover:cursor-pointer group',
+    'flex gap-2 text-navbar-foreground stroke-navbar-foreground items-center px-2.5 py-1.5 rounded-xl hover:text-accent hover:stroke-accent hover:bg-accent/15 active:scale-[0.95] transition-all duration-150 ease-out hover:cursor-pointer group select-none',
     className,
   )}
   {...rest}
