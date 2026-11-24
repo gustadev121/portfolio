@@ -6,6 +6,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "deploy": "astro build && wrangler deploy",
+    "dry-run": "astro build --dry-run",
+    "cf:dev": "wrangler dev",
+    "cf:whoami": "wrangler whoami",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
     "format": "biome format --write .",
@@ -26,6 +30,7 @@
     "typescript": "^5.8.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.1"
+    "@biomejs/biome": "^2.5.1",
+    "wrangler": "^4.167.0"
   }
 }
