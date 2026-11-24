@@ -53,7 +53,7 @@ export const genProjects: (i18n: ReturnType<typeof getI18n>) => ProjectCardType[
       description: i18n.PROJECTS.KNOWLEDGE_WARDENS.DESCRIPTION,
       img: KnowledgeWardensImage,
       tags: [tags.nextjs, tags.react, tags.unity, tags.vercel, tags.tailwind, tags.frontend],
-      github: 'https://github.com/gustadev24/knowledge_wardens',
+      github: 'https://github.com/gustadev121/knowledge_wardens',
       preview: 'https://knowledge-wardens.vercel.app',
     },
     {

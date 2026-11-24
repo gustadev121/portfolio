@@ -16,7 +16,7 @@ colors:
   dark-secondary: "#04428e"
   dark-secondary-foreground: "#ffffff"
   dark-tertiary: "#395dff"
-  dark-accent: "#ea780e"
+  dark-accent: "#38bdf8"
   dark-muted: "#ffd69c"
   dark-button: "#02183a"
   dark-button-foreground: "#0088ff"
@@ -78,7 +78,7 @@ components:
 
 **Creative North Star: "The Modern Craftsperson's Sanctuary"**
 
-The visual language balances technical precision with friendly, tactile warmth. Grounded in deep celestial blues with luminous amber accents, the interface combines frosted glassmorphism, responsive ambient glows, and snappy micro-interactions that make every tap feel immediate and rewarding.
+The visual language balances technical precision with friendly, tactile warmth. Grounded in deep celestial blues with luminous sky-blue accents, the interface combines frosted glassmorphism, responsive ambient glows, and snappy micro-interactions that make every tap feel immediate and rewarding.
 
 **Key Characteristics:**
 - Layered ambient depth through subtle backdrop glows that adapt between light and dark themes.
@@ -91,8 +91,8 @@ The visual language balances technical precision with friendly, tactile warmth. 
 A dynamic dual-mode palette centered around deep atmospheric blues and vibrant energetic accents.
 
 ### Primary
-- **Cerulean Ocean** (`#0380d4` in light mode, `#020f58` in dark mode): Defines brand authority and major surface accents.
-- **Tangerine Spark / Golden Sun** (`#e46707` in light, `#ffd62c` in dark): Used for primary text highlights, section titles, and active branding marks.
+- **Cerulean Ocean** (`#0284c7` in light mode, `#38bdf8` in dark mode): Defines brand authority, interactive highlights (nav active states, button hovers, title hovers), and major surface accents. The theme commits to a single blue family in both modes.
+- **Sky Signal** (`#0a6fe3` in light, `#38bdf8` in dark): Used for interactive highlights, section indicators, and active branding marks.
 
 ### Secondary
 - **Deep Slate Blue** (`#205695` in light, `#04428e` in dark): The foundation for card backgrounds and container structures.

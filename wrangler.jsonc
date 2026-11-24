@@ -3,7 +3,7 @@
   "name": "portfolio",
   "account_id": "fa87f8a7797e7bbc0e4670bda8579e1c",
   "compatibility_date": "2026-11-24",
-  "workers_dev": true,
+  "workers_dev": false,
   "assets": {
     "directory": "./dist"
   },

@@ -31,7 +31,7 @@ Evaluated across desktop and mobile devices by recruiters and hiring managers wh
 
 ## Brand Commitments
 
-- **Name**: Gustavo Sequeiros (@gustadev24 / Luis Gustavo).
+- **Name**: Gustavo Sequeiros (@gustadev121 / Luis Gustavo).
 - **Voice**: Professional, authentic, enthusiastic, innovative, and detail-oriented.
 - **Visual Tone**: Clean modern developer aesthetic with refined typography and subtle ambient lighting, avoiding generic AI clichés.
 
